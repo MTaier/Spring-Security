@@ -1,0 +1,10 @@
+services:
+  postgres-db:
+    image: postgres
+    container_name: spring-security-db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: spring-security
+    ports:
+      - "5432:5432"
